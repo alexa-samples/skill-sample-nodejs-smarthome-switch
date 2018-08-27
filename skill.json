@@ -1,0 +1,26 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Sample Smart Home Skill - Node.js - Switch",
+          "examplePhrases": [],
+          "name": "skill-sample-nodejs-smarthome-switch",
+          "description": "A sample Smart Home skill that implements a virtual switch in Node.js."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "",
+      "category": "EDUCATION_AND_REFERENCE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "smartHome": {
+        "endpoint": {
+          "sourceDir": "lambda/smarthome"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

@@ -1,0 +1,17 @@
+
+[Login with Amazon Client ID]
+amzn1.application-oa2-client.XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+[Login with Amazon Client Secret]
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+[Alexa Skill Application ID]
+amzn1.ask.skill.XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+
+[AWS Lambda ARN]
+arn:aws:lambda:us-east-1:XXXXXXXXXXXX:function:skill-sample-language-smarthome-switch
+
+[Redirect URLs]
+https://pitangui.amazon.com/api/skill/link/XXXXXXXXXXXXXX
+https://layla.amazon.com/api/skill/link/XXXXXXXXXXXXXX
+https://alexa.amazon.co.jp/api/skill/link/XXXXXXXXXXXXXX

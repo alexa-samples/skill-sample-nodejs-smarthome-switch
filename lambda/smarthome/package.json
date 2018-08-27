@@ -1,0 +1,36 @@
+{
+  "name": "skill-sample-nodejs-smarthome-switch",
+  "version": "1.0.1",
+  "description": "A basic Alexa Smart Home switch skill sample in JavaScript for Node.js.",
+  "main": "index.js",
+  "contributors": [
+    {
+      "name": "Mike Maas",
+      "email": "mikemaas@amazon.com"
+    }
+  ],
+  "dependencies": {
+    "aws-sdk": "^2.275.1",
+    "mocha": "^5.2.0",
+    "uuid": ">1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexa/alexa-smarthome.git"
+  },
+  "keywords": [
+    "Alexa",
+    "skill",
+    "testing"
+  ],
+  "author": "Amazon.com",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/alexa/alexa-smarthome/issues"
+  },
+  "homepage": "https://github.com/alexa/alexa-smarthome"
+}
