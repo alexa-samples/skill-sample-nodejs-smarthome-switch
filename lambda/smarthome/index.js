@@ -67,7 +67,7 @@ exports.handler = async function (event, context) {
         let adr = new AlexaResponse({"namespace": "Alexa.Discovery", "name": "Discover.Response"});
         let capability_alexa = adr.createPayloadEndpointCapability();
         let capability_alexa_powercontroller = adr.createPayloadEndpointCapability({"interface": "Alexa.PowerController", "supported": [{"name": "powerState"}]});
-        adr.addPayloadEndpoint({"endpoint-001": "switch_sample", "capabilities": [capability_alexa, capability_alexa_powercontroller]});
+        adr.addPayloadEndpoint({"friendlyName": "Sample Switch", "endpointId": "sample-switch-01", "capabilities": [capability_alexa, capability_alexa_powercontroller]});
         return sendResponse(adr.get());
     }
 
@@ -102,8 +102,6 @@ exports.handler = async function (event, context) {
                 }).get();
         }
 
-        console.log(JSON.stringify(result));
-
         return sendResponse(ar.get());
     }
 
@@ -118,30 +116,26 @@ function sendResponse(response)
 }
 
 function sendDeviceState(endpoint_id, state, value) {
-    let dynamodb = new AWS.DynamoDB();
+    let dynamodb = new AWS.DynamoDB({apiVersion: '2012-08-10'});
 
     let key = state + "Value";
     let attribute_obj = {};
     attribute_obj[key] = {"Action": "PUT", "Value": {"S": value}};
 
-    let result = dynamodb.updateItem(
+    let request = dynamodb.updateItem(
         {
             TableName: "SampleSmartHome",
             Key: {"ItemId": {"S": endpoint_id}},
-            AttributeUpdates: attribute_obj
-        },
-        function (err, data) {
-            if (err) {
-                console.log(err, err.stack); // an error occurred
-                return false;
-            }
-            else {
-                console.log(data);           // successful response
-                return true;
-            }
-
+            AttributeUpdates: attribute_obj,
+            ReturnValues: "UPDATED_NEW"
         });
 
-    console.log(result);
+    console.log("index.sendDeviceState request -----");
+    console.log(request);
+
+    let response = request.send();
+
+    console.log("index.sendDeviceState response -----");
+    console.log(response);
     return true;
 }
