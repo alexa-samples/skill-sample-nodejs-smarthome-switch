@@ -12,9 +12,10 @@ These instructions are to build a Sample Alexa Smart Home skill using JavaScript
 4. [Create the Skill](create-the-skill.md)
 5. [Setup the Lambda Function](setup-the-lambda-function.md)
 6. [Configure the Skill](configure-the-skill.md)
-7. [Deploy the Sample Code](deploy-the-sample-code.md)
-8. [Test the Skill](test-the-skill.md)
-9. [Review the Skill Logs](review-the-skill-logs.md)
+7. [Setup the DynamoDB Table](setup-the-dynamodb-table.md)
+8. [Deploy the Sample Code](deploy-the-sample-code.md)
+9. [Test the Skill](test-the-skill.md)
+10. [Review the Skill Logs](review-the-skill-logs.md)
 
 To begin, start with [Setup the Sample Resources](setup-the-sample-resources.md) 
 

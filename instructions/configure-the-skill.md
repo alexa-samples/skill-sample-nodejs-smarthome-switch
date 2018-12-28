@@ -32,6 +32,6 @@ Using your account-specific values from the skill configuration section, collect
 6. Click **Save**.
 
 
-Next [Deploy the Sample Code](deploy-the-sample-code.md)
+Next [Setup the DynamoDB Table](setup-the-dynamodb-table.md)
 
 Return to the [Instructions](README.md)
