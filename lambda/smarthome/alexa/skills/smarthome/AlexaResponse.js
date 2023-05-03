@@ -13,7 +13,7 @@
 
 'use strict';
 
-let uuid = require('uuid');
+let uuid = require('uuid/v4');
 
 /**
  * Helper class to generate an AlexaResponse.
