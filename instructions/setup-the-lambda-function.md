@@ -49,7 +49,7 @@ Create a new AWS Lambda function that will handle the Smart Home directives from
 3. Click on the **Create function** button to start creating an AWS Lambda function.
 4. On the *Create function* page, select the **Author from scratch** option.
 5. For the Name of the function, enter `skill-sample-nodejs-smarthome-switch`.
-6. For the Runtime, select **Node.js 8.10**.
+6. For the Runtime, select **Node.js 12.x**.
 7. Choose an existing role and select *lambda\_skill\_sample\_smarthome\_switch* from the **Existing Role** options.
 8. Click the **Create function** button to create the AWS Lambda function.
 9. From the Lambda function page, copy the ARN from the top right of the page and save it into the `setup.txt` file in the [AWS Lambda ARN] section. The ARN should look something like: `arn:aws:lambda:us-east-1:XXXXXXXXXXXX:function:skill-sample-language-smarthome-switch`
