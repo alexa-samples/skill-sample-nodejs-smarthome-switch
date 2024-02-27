@@ -24,7 +24,7 @@ Configure the Alexa Smart Home skill and fill out the required settings.
 
 Using your account-specific values from the skill configuration section, collect the Redirect URLs and set them in the *Security Profile Web Settings* **Allowed Return URLs**.
 
-1. Open https://developer.amazon.com/iba-sp/overview.html in another browser tab and make sure *APPS & SERVICES* is selected in the top menu and *Security Profiles* is selected in the sub menu.
+1. Open https://developer.amazon.com/iba-sp/overview.html in another browser tab and make sure *Settings* is selected in the top menu and *Security Profiles* is selected in the sub menu.
 2. Select the **Smart Home Sample** Security Profile.
 3. On the *Security Profile Management* page, select the **Web Settings** tab.
 4. In the *Web Settings*, click the **Edit** button.
